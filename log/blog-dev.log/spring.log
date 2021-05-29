@@ -1,0 +1,449 @@
+2021-05-29 17:35:04.405  INFO 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : Starting BlogApplication on DESKTOP-4JMI8VU with PID 19312 (D:\Codestudy\blog\target\classes started by 89737 in D:\Codestudy\blog)
+2021-05-29 17:35:04.483 DEBUG 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2021-05-29 17:35:04.483  INFO 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : The following profiles are active: dev
+2021-05-29 17:35:04.639  INFO 19312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-05-29 17:35:04.639  INFO 19312 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-05-29 17:35:05.923  INFO 19312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 17:35:06.121  INFO 19312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 168ms. Found 5 JPA repository interfaces.
+2021-05-29 17:35:07.381  INFO 19312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-29 17:35:07.397  INFO 19312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-29 17:35:07.397  INFO 19312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-29 17:35:07.537  INFO 19312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-29 17:35:07.537  INFO 19312 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2898 ms
+2021-05-29 17:35:08.023  INFO 19312 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 17:35:08.105  INFO 19312 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.25.Final
+2021-05-29 17:35:08.353  INFO 19312 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-05-29 17:35:08.541  INFO 19312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-05-29 17:35:08.822  INFO 19312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-05-29 17:35:08.853  INFO 19312 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-05-29 17:35:10.148  INFO 19312 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 17:35:10.166  INFO 19312 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 17:35:10.262  INFO 19312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-29 17:35:11.441  WARN 19312 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 17:35:11.707  INFO 19312 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 17:35:11.894  INFO 19312 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-29 17:35:12.617  INFO 19312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-29 17:35:12.632  INFO 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : Started BlogApplication in 9.159 seconds (JVM running for 12.764)
+2021-05-29 17:35:24.501  INFO 19312 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-29 17:35:24.501  INFO 19312 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-29 17:35:24.521  INFO 19312 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2021-05-29 17:35:24.620  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:35:24.622  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:35:24.921  WARN 19312 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-29 17:35:24.943  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:35:24.944  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:35:27.065  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:35:27.065  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:35:27.073  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:35:27.073  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:35:36.093  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:35:36.094  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:35:36.101  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:35:36.102  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:35:37.394  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:35:37.394  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:35:37.399  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:35:37.400  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:35:38.713  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:35:38.713  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:35:38.728  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:35:38.728  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:35:55.259  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:35:55.259  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:35:55.265  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:35:55.266  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:35:56.883  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:35:56.883  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:35:56.883  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:35:56.883  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:10.630  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:10.630  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:10.635  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:10.635  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:11.889  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:11.889  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:11.889  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:11.889  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:24.772  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:24.788  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:24.788  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:24.788  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:27.991  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:27.991  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:27.997  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:27.998  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:40.771  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:40.771  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:40.787  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:40.787  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:42.746  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:42.746  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:42.761  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:42.761  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:54.352  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:54.352  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:54.368  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:54.368  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:36:56.955  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:36:56.955  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:36:56.955  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:36:56.955  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:06.389  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:06.389  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:06.405  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:06.405  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:08.026  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:08.027  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:08.032  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:08.032  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:09.665  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:09.665  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:09.665  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:09.665  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:13.117  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:13.117  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:13.117  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:13.117  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:14.706  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:14.706  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:14.721  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:14.721  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:16.958  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:16.958  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:16.958  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:16.958  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:18.516  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:18.516  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:18.516  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:18.516  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:21.103  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:21.103  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:21.108  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:21.108  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:24.154  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:24.154  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:24.158  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:24.158  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:29.443  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:29.443  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:29.443  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:29.443  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:30.460  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:30.460  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:30.460  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:30.460  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:37:33.497  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:37:33.497  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:37:33.513  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:37:33.513  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:39:04.745  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:39:04.745  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:39:04.760  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:39:04.760  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:39:06.530  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:39:06.530  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:39:06.538  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:39:06.538  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:39:07.167  INFO 19312 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-29 17:39:07.177  INFO 19312 --- [Thread-18] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 17:39:07.197  INFO 19312 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-05-29 17:39:07.227  INFO 19312 --- [Thread-18] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-05-29 17:39:07.833  INFO 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : Starting BlogApplication on DESKTOP-4JMI8VU with PID 19312 (D:\Codestudy\blog\target\classes started by 89737 in D:\Codestudy\blog)
+2021-05-29 17:39:07.853 DEBUG 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : Running with Spring Boot v2.3.7.RELEASE, Spring v5.2.12.RELEASE
+2021-05-29 17:39:07.853  INFO 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : The following profiles are active: dev
+2021-05-29 17:39:08.761  INFO 19312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-29 17:39:08.912  INFO 19312 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149ms. Found 5 JPA repository interfaces.
+2021-05-29 17:39:09.617  INFO 19312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-05-29 17:39:09.618  INFO 19312 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-05-29 17:39:09.619  INFO 19312 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-05-29 17:39:09.669  INFO 19312 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-05-29 17:39:09.669  INFO 19312 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1806 ms
+2021-05-29 17:39:09.868  INFO 19312 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-29 17:39:09.891  INFO 19312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-05-29 17:39:09.901  INFO 19312 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-05-29 17:39:09.901  INFO 19312 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-05-29 17:39:10.314  INFO 19312 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-29 17:39:10.314  INFO 19312 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 17:39:10.425  INFO 19312 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-05-29 17:39:11.885  WARN 19312 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-05-29 17:39:12.513  INFO 19312 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-29 17:39:12.684  INFO 19312 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-05-29 17:39:13.400  INFO 19312 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-05-29 17:39:13.418  INFO 19312 --- [restartedMain] com.zhcloud.blog.BlogApplication         : Started BlogApplication in 5.676 seconds (JVM running for 253.552)
+2021-05-29 17:39:13.421  INFO 19312 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-05-29 17:42:07.681  INFO 19312 --- [http-nio-8080-exec-8] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-05-29 17:42:07.681  INFO 19312 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-05-29 17:42:07.719  INFO 19312 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed initialization in 38 ms
+2021-05-29 17:42:09.987  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:09.987  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:10.002  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:10.002  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:12.849  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:12.849  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:12.849  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:12.849  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:14.601  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:14.601  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:14.601  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:14.601  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:18.729  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:18.729  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:18.729  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:18.729  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:20.002  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:20.002  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:20.002  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:20.002  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:23.844  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:23.844  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:23.860  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:23.860  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:26.204  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:26.204  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:26.220  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:26.220  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:31.551  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:31.551  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:31.551  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:31.551  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:34.074  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:34.090  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:34.090  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:34.090  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:37.906  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:37.906  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:37.906  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:37.906  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:41.147  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:41.147  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:41.147  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:41.147  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:44.789  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:44.789  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:44.789  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:44.789  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:48.168  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:48.168  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:48.168  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:48.168  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:51.948  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:51.963  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:51.963  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:51.963  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:53.716  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:42:53.716  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:53.731  WARN 19312 --- [http-nio-8080-exec-8] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-29 17:42:53.747  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:42:53.747  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:42:54.270  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:42:54.270  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:42:54.286  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:42:54.286  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:09.024  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:44:09.024  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:09.024  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:44:09.024  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:10.644  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:44:10.644  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:10.644  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:44:10.644  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:13.166  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:44:13.166  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:13.166  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:44:13.166  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:15.604  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:44:15.604  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:15.620  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:44:15.620  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:22.780  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:44:22.780  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:22.795  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:44:22.795  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:29.568  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:44:29.568  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:29.568  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:44:29.568  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:30.263  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:44:30.263  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:30.269  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:44:30.269  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:44:31.004  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:44:31.004  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:44:31.004  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:44:31.004  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:07.059  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:45:07.059  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:07.067  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:45:07.067  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:07.872  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:07.872  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:07.880  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:07.882  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:09.204  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:45:09.204  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:09.204  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:45:09.204  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:10.002  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:10.002  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:10.017  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:10.017  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:12.078  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:45:12.078  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:12.078  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:45:12.078  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:12.930  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:12.930  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:12.945  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:12.945  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:13.702  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:45:13.702  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:13.717  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:45:13.717  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:14.493  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:14.493  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:14.501  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:14.501  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:15.385  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:45:15.385  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:15.385  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:45:15.385  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:15.875  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:15.875  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:15.875  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:15.875  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:27.942  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:45:27.942  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:27.955  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:45:27.955  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:28.918  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:28.918  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:28.928  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:28.928  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:30.341  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:45:30.341  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:30.341  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:45:30.341  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:31.278  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:31.278  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:31.278  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:31.278  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:42.536  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-05-29 17:45:42.536  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:42.551  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : Result : {}types
+2021-05-29 17:45:42.551  INFO 19312 --- [http-nio-8080-exec-9] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:42.636  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/types/999', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 999, {}]}
+2021-05-29 17:45:42.636  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:42.636  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}types
+2021-05-29 17:45:42.636  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:43.021  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:43.021  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:43.021  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:43.021  INFO 19312 --- [http-nio-8080-exec-7] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:48.632  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-05-29 17:45:48.632  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:48.654  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}tags
+2021-05-29 17:45:48.654  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:48.739  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/tags/999', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 999, {}]}
+2021-05-29 17:45:48.739  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:48.754  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}tags
+2021-05-29 17:45:48.754  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:49.117  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:49.117  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:49.117  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:49.117  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:49.704  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-05-29 17:45:49.704  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:49.719  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}archives
+2021-05-29 17:45:49.719  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:50.158  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:50.158  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:50.158  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:50.158  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:51.061  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.AboutShowController.about', args=[]}
+2021-05-29 17:45:51.061  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:51.076  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}about
+2021-05-29 17:45:51.076  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:51.510  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:51.510  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:51.510  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:51.510  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:52.850  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-05-29 17:45:52.850  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:52.850  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}archives
+2021-05-29 17:45:52.850  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:53.298  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:53.298  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:53.314  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:53.314  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:53.630  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-05-29 17:45:53.630  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:53.646  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}tags
+2021-05-29 17:45:53.646  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:53.730  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/tags/999', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 999, {}]}
+2021-05-29 17:45:53.730  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:53.730  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}tags
+2021-05-29 17:45:53.730  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:54.085  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:54.085  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:54.100  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:54.100  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:54.856  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/types/-1', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-05-29 17:45:54.856  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:54.856  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}types
+2021-05-29 17:45:54.856  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:54.928  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/types/999', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 999, {}]}
+2021-05-29 17:45:54.928  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:54.931  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}types
+2021-05-29 17:45:54.931  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:45:55.332  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:45:55.333  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:45:55.335  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:45:55.335  INFO 19312 --- [http-nio-8080-exec-1] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:27.370  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.AboutShowController.about', args=[]}
+2021-05-29 17:47:27.370  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:27.370  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}about
+2021-05-29 17:47:27.370  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:28.223  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:47:28.223  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:28.227  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:47:28.227  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:38.197  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/archives', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.ArchiveShowController.archives', args=[{}]}
+2021-05-29 17:47:38.197  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:38.201  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}archives
+2021-05-29 17:47:38.201  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:38.621  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:47:38.621  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:38.625  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:47:38.625  INFO 19312 --- [http-nio-8080-exec-5] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:39.687  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/tags/-1', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-05-29 17:47:39.687  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:39.695  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}tags
+2021-05-29 17:47:39.695  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:39.803  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/tags/999', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], 999, {}]}
+2021-05-29 17:47:39.803  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:39.807  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : Result : {}tags
+2021-05-29 17:47:39.807  INFO 19312 --- [http-nio-8080-exec-10] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:40.199  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:47:40.199  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:40.203  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:47:40.203  INFO 19312 --- [http-nio-8080-exec-8] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:40.645  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/about', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.AboutShowController.about', args=[]}
+2021-05-29 17:47:40.645  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:40.645  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : Result : {}about
+2021-05-29 17:47:40.645  INFO 19312 --- [http-nio-8080-exec-4] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:41.073  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:47:41.073  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:41.073  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:47:41.073  INFO 19312 --- [http-nio-8080-exec-3] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:42.438  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.index', args=[Page request [number: 0, size 6, sort: updateTime: DESC], {}]}
+2021-05-29 17:47:42.438  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:42.450  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : Result : {}index
+2021-05-29 17:47:42.450  INFO 19312 --- [http-nio-8080-exec-2] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:42.966  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : ReqeustLog{url='http://127.0.0.1:8080/footer/newblog', ip='127.0.0.1', classMethod='com.zhcloud.blog.web.IndexController.newblogs', args=[{}]}
+2021-05-29 17:47:42.966  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---before----
+2021-05-29 17:47:42.970  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : Result : {}_fragments :: newblogList
+2021-05-29 17:47:42.970  INFO 19312 --- [http-nio-8080-exec-6] com.zhcloud.blog.aspect.LogAspect        : ---after----
+2021-05-29 17:47:49.723  INFO 19312 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-29 17:47:49.735  INFO 19312 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-29 17:47:49.739  INFO 19312 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-05-29 17:47:49.783  INFO 19312 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
